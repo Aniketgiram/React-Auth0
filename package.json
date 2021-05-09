@@ -32,10 +32,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start -p $PORT",
-    "json-server": "json-server --watch db.json -p $PORT",
-    "stripe-webhook": "stripe listen --forward-to localhost:3000/api/stripe-webhook",
-    "heroku-postbuild":"npm run dev"
+    "start": "next start",
+    "json-server": "json-server --watch db.json --port 8080",
+    "stripe-webhook": "stripe listen --forward-to localhost:3000/api/stripe-webhook"
   },
   "eslintConfig": {
     "extends": "react-app"
